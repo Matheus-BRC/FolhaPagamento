@@ -11,6 +11,7 @@ public class Funcionario {
     }
 
     private void setNome(String nome){
+        if(nome == null || nome.isBlank()) throw new IllegalArgumentException("Nome inválido");
         this.nome = nome;
     }
 
@@ -19,6 +20,7 @@ public class Funcionario {
     }
 
     private void setCpf(String cpf){
+        if(nome == null || nome.isBlank()) throw new IllegalArgumentException("CPF inválido");
         this.cpf = cpf;
     }
 
@@ -27,6 +29,7 @@ public class Funcionario {
     }
 
     private void setTipo(String tipo){
+        if(nome == null || nome.isBlank()) throw new IllegalArgumentException("Tipo inválido");
         this.tipo = tipo;
     }
 
@@ -34,7 +37,11 @@ public class Funcionario {
         return tipo;
     }
 
-    public double getSalario(){
+    public double getSalario() {
+        return 0;
+    }
+
+    public double getValorHora() {
         return 0;
     }
 

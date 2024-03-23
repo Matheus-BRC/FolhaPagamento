@@ -18,6 +18,7 @@ public class Horista extends Funcionario{
     }
 
     private void setValorHora(double valorHora) {
+        if(valorHora <= 0) throw new IllegalArgumentException("Valor Inválido");
         this.valorHora = valorHora;
     }
 
